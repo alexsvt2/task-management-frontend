@@ -1,2 +1,7 @@
-<p>login works!</p>
-<app-form></app-form>
+<h2>Login</h2>
+<app-form
+  buttonTextPrimary="Login"
+  buttonTextSecondary="You don't have an account?, Register!"
+  redirectTo="/auth/signup"
+  (userDataEvent)="login($event)"
+></app-form>

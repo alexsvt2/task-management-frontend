@@ -1,1 +1,8 @@
-<p>singup works!</p>
+<h2>Register</h2>
+<app-form
+  buttonTextPrimary="Register"
+  buttonTextSecondary="You already have an account?, Login!"
+  redirectTo="/auth/login"
+  (userDataEvent)="register($event)"
+>
+</app-form>
